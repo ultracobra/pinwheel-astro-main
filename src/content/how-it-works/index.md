@@ -2,7 +2,6 @@
 title: How It Works
 page_title: our structured approach helps you navigate uncertainties
 
-
 # perfomance
 perfomance:
   - title: market profetionals

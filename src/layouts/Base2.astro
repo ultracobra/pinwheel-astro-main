@@ -3,8 +3,8 @@ import TwSizeIndicator from "@components/TwSizeIndicator.astro";
 import config from "@config/config.json";
 import theme from "@config/theme.json";
 import { plainify } from "@lib/utils/textConverter";
-import Header from "@partials/Header.astro";
-import Footer from "@partials/Footer.astro";
+import Header2 from "@partials/Header2.astro";
+import Footer2 from "@partials/Footer2.astro";
 import "@styles/main.scss";
 
 // font families
@@ -141,10 +141,10 @@ const { title, meta_title, description, image, noindex, canonical } =
   </head>
   <body>
     <TwSizeIndicator />
-    <Header />
+    <Header2 />
+    <Footer2 />
     <main id="main-content">
       <slot />
     </main>
-    <Footer />
   </body>
 </html>

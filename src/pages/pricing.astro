@@ -1,8 +1,7 @@
 ---
-import PageHeader from "@components/PageHeader.astro";
+// import PageHeader from "@components/PageHeader.astro";
 import Shape from "@components/Shape.astro";
-import Base from "@layouts/Base.astro";
-import Faq from "@layouts/function-components/Faq.jsx";
+import Base2 from "@layouts/Base2.astro";
 import PricingCard from "@layouts/function-components/PricingCard.jsx";
 import { getEntryBySlug } from "astro:content";
 
@@ -13,7 +12,7 @@ const page_data = {
 };
 ---
 
-<Base
+<Base2
   title={pricing.data.title}
   meta_title={pricing.data.meta_title}
   description={pricing.data.description}
@@ -22,7 +21,7 @@ const page_data = {
   <Shape />
   <section class="page-hero pb-14 pt-16">
     <div class="container">
-      <PageHeader page_data={page_data} />
+      <!-- <PageHeader page_data={page_data} /> -->
     </div>
   </section>
   <!-- pricing -->
@@ -37,5 +36,5 @@ const page_data = {
       </div>
     </div>
   </section>
-  <Faq client:load data={pricing.data} />
-</Base>
+  <!-- <Faq client:load data={pricing.data} /> -->
+</Base2>

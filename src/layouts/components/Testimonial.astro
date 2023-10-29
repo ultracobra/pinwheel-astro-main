@@ -3,10 +3,10 @@ import TestimonialSlider from "@layouts/function-components/TestimonialSlider";
 const { testimonial } = Astro.props;
 
 
-import PageHeader from "@components/PageHeader.astro";
+// import PageHeader from "@components/PageHeader.astro";
 import Shape from "@components/Shape.astro";
-import Base from "@layouts/Base.astro";
-import Faq from "@layouts/function-components/Faq.jsx";
+import Base2 from "@layouts/Base2.astro";
+// import Faq from "@layouts/function-components/Faq.jsx";
 import PricingCard from "@layouts/function-components/PricingCard.jsx";
 import { getEntryBySlug } from "astro:content";
 
@@ -17,7 +17,7 @@ const page_data = {
 };
 ---
 
-<Base
+<Base2
   title={pricing.data.title}
   meta_title={pricing.data.meta_title}
   description={pricing.data.description}
@@ -42,7 +42,7 @@ const page_data = {
     </div>
   </section>
   <!-- <Faq client:load data={pricing.data} /> -->
-</Base>
+</Base2>
 
 <section class="reviews">
   <div class="container">
